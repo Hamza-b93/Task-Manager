@@ -1,0 +1,115 @@
+// const CreateUserRoute = router.post('/', async (req,res) => {
+//   console.log("CreateUser route working!");
+//   console.log(user);
+//
+// });
+//
+//
+
+
+const UserSignupGetRoute = router.get("/", async function (req, res, next) {
+  // const finder = 'xaza';
+  // const userDoc = await user.findById(finder).exec();
+  // console.log(userDoc.settings[0].emailAddress);
+  console.log("Signup Get Route Active!");
+  next();
+  res.end();
+  });
+
+const UserSignupPostRoute = router.post('/', async (req, res) => {
+  const emailAddress = req.body.emailAddress;
+  // const _id = req.body._id;
+  const _id = emailAddress;
+  const createdOn = new Date();
+  const userDocuments = await user.find();
+  console.log(userDocuments);
+  // userDocuments.every(async (document) => {
+  //   const email = await document.settings[0].emailAddress;
+  //   const userID = await document._id;
+  //   //console.log(document.settings[0].emailAddress);
+  //   // const refEmail = "1fgh";
+  //   // const refUserID = "4fgh";
+  //   const emailExists = (emailAddress === email);
+  //   const userIDExists = (_id === userID);
+  //   console.log('Email Exists: ' +  emailExists);
+  //   console.log('Username Exists: ' +  userIDExists);
+  //   // if ((emailExists && userIDExists) == true) {
+  //   //   console.log("Username And Email both already is use!");
+  //   //   console.log(document._id);
+  //   //   console.log(document.settings[0].emailAddress);
+  //   // }
+  //   // else if ((emailExists == true) && (userIDExists == false)) {
+  //   //   console.log("Email Address already in use!");
+  //   //   console.log(document._id);
+  //   //   console.log(document.settings[0].emailAddress);
+  //   // }
+  //   // else if ((emailExists == false) && (userIDExists == true)) {
+  //   //   console.log("Username already in use!");
+  //   //   console.log(document._id);
+  //   //   console.log(document.settings[0].emailAddress);
+  //   // }
+  //   // else {
+  //   //   user.create(
+  //   //     {
+  //   //       _id: _id,
+  //   //       settings: {
+  //   //         username: _id,
+  //   //         emailAddress: emailAddress,
+  //   //         password: '23es',
+  //   //         createdOn: createdOn
+  //   //       }
+  //   //     });
+  //   //   console.log("Account created!");
+  //   // }
+  //
+  //   // try {
+  //   //   user.create(
+  //   //       {
+  //   //         _id: _id,
+  //   //         settings: {
+  //   //           username: _id,
+  //   //           emailAddress: emailAddress,
+  //   //           password: '23es',
+  //   //           createdOn: createdOn
+  //   //         }
+  //   //       });
+  //   //      }
+  //   // catch (err) {
+  //   //   console.log(err);
+  //   }
+//}
+  //   // catch (err) {
+  //   //   console.log(err);
+  //   }
+//
+  try {
+    await user.create(
+        {
+          _id: _id,
+          settings: {
+            username: _id,
+            emailAddress: emailAddress,
+            password: '23es',
+            createdOn: createdOn
+          }
+        });
+    console.log("user Created!");
+      }
+  catch (err) {
+    //res.json(err);
+    res.send("Email aready in use!");
+}
+
+  // });
+  res.send();
+  res.end();
+
+
+  // if (_idExists === false && emailExists === false) {
+
+
+    // }
+
+
+
+});
