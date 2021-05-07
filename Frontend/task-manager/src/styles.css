@@ -1,0 +1,295 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1400px) {
+  /* Settings for Gradient effect. */
+  @-webkit-keyframes Background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-moz-keyframes Background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-o-keyframes Background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes Background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* Gradient Effect settings end here. */
+
+  .accountLinks {
+    color: #aa42f5;
+    font-weight: bold;
+  }
+
+  .accountLinksText {
+    font-size: 18px;
+  }
+
+  #addTask {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  #addTask:hover {
+    color: #fcba03;
+    cursor: pointer;
+  }
+
+  .addTaskFormInput {
+    border-radius: 55px;
+    border-style: hidden;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    width: 275px;
+  }
+
+  #addTaskLoginForm {
+    margin: auto;
+    text-align: center;
+  }
+
+  #complete {
+    background: none;
+    border: 3px;
+    border-color: #4bd659;
+    border-style: solid;
+    color: #4bd659;
+    cursor: pointer;
+    float: left;
+    font-size: 22px;
+  }
+
+  .formContainer {
+    margin: auto;
+    text-align: center;
+  }
+
+  #formContainer2 {
+    margin: auto;
+    margin-top: -550px;
+    margin-left: 15%;
+    padding-top: 15px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .formControlBtn {
+    border-radius: 45px;
+    border-style: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    width: 155px;
+  }
+
+  .formInput {
+    border-radius: 55px;
+    border-style: hidden;
+    height: 55px;
+    padding-left: 15px;
+    width: 275px;
+  }
+
+  #headerColumn {
+    float: right;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    padding-top: 10px;
+    text-align: right;
+  }
+
+  #incomplete {
+    background: none;
+    border: 3px;
+    border-color: #d6d14b;
+    border-style: solid;
+    color: #d6d14b;
+    cursor: pointer;
+    float: right;
+    font-size: 22px;
+  }
+
+  #indicator {
+    font-family: "Rubik Mono One", sans-serif;
+  }
+
+  .landingHeadings {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 35px;
+  }
+
+  .LandingInfo {
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .landingPageImages {
+    max-width: 850px;
+  }
+
+  .landingPageInfoImages {
+    margin-top: -150px;
+    max-width: 850px;
+    vertical-align: top;
+  }
+
+  #SigninBtn {
+    background: none;
+    border: 3px;
+    border-color: #f2f2f2;
+    border-style: solid;
+    color: #f2f2f2;
+    cursor: pointer;
+    margin: auto;
+  }
+
+  #SigninBtn:hover {
+    border-color: #1c1c1c;
+    color: #1c1c1c;
+  }
+
+  #SigninForm {
+    margin: auto;
+    padding-bottom: 225px;
+    padding-top: 335px;
+    text-align: center;
+  }
+
+  #primaryContainer {
+    /* Settings for Gradient effect. */
+    background: linear-gradient(320deg, #40dae9, #346dd8, #0bdcce);
+    background-size: 600% 600%;
+    -webkit-animation: Background 30s ease infinite;
+    -moz-animation: Background 30s ease infinite;
+    -o-animation: Background 30s ease infinite;
+    animation: Background 30s ease infinite;
+    /* Gradient Effect settings end here. */
+    color: #f2f2f2;
+    font-family: "Rubik", sans-serif;
+  }
+
+  #primaryRow {
+    font-size: 35px;
+    margin: auto;
+    text-align: center;
+  }
+
+  #signupBtn {
+    background: none;
+    border: 3px;
+    border-color: #f2f2f2;
+    border-style: solid;
+    color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  #signupBtn:hover {
+    border-color: #1c1c1c;
+    color: #1c1c1c;
+  }
+
+  #signupForm {
+    margin: auto;
+    padding-bottom: 150px;
+    padding-top: 250px;
+    text-align: center;
+  }
+
+  .taskContainer {
+    border-color: #f2f2f2;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .taskContent {
+    font-size: 20px;
+  }
+
+  #taskSubmitBtn {
+    background: none;
+    border: 3px;
+    border-color: #f2f2f2;
+    border-style: solid;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-size: 15px;
+    margin: auto;
+    margin-left: 15px;
+  }
+
+  #taskSubmitBtn:hover {
+    border-color: #1c1c1c;
+    color: #1c1c1c;
+  }
+
+  #welcome {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 65px;
+  }
+
+  #welcome2 {
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 25px;
+  }
+
+  .welcomeButtons {
+  }
+
+  #welcomeColumn {
+    margin-bottom: 75px;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #primaryRow {
+    font-size: 22px;
+    margin: auto;
+    text-align: center;
+  }
+}
